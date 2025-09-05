@@ -1,0 +1,12 @@
+body {
+  margin: 0px;
+}
+
+.fancy {
+  height: 100vh;
+  background-size: cover;
+}
+
+.woods {
+  background-image: url("/images/woods.jpg");
+}
