@@ -1,12 +1,117 @@
-body {
-  margin: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Papyrus;
 }
 
-.fancy {
-  height: 100vh;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  display: block;
+}
+
+header {
+  position: fixed;
+  background-color: rgba(96, 192, 76, 0.897);
+  color: rgb(17, 58, 13);
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+header nav a {
+  margin-left: 2rem;
+  color: rgb(27, 71, 16);
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: rgb(114, 194, 240);
+}
+
+.background {
+  position: relative;
   background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem;
+}
+
+.sunset {
+  background-image: url(./images/sunset.jpg);
 }
 
 .woods {
-  background-image: url("/images/woods.jpg");
+  background-image: url(./images/woods.jpg);
+}
+
+.profi {
+  background-image: url(./images/profi.jpg);
+}
+
+.text-box {
+  position: absolute;
+  padding: 1.5rem 1rem;
+  bottom: 225px;
+  max-width: 400px;
+  border-radius: 22px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(183, 218, 126, 0.719);
+}
+
+.text-box p {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.text-box h2 {
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.text-box button {
+  background-color: rgba(57, 50, 88, 0.966);
+  color: white;
+  margin: 1rem 0;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.text-box button:hover {
+  background-color: rgb(18, 104, 116);
+}
+
+footer {
+  background-color: rgba(89, 94, 97, 0.952);
+  color: wheat;
+  display: flex;
+  height: 100px;
+  text-align: center;
+  font-size: x-large;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+footer a {
+  position: absolute;
+  left: 88rem;
+  font-size: 5rem;
+  cursor: pointer;
+  color: gold;
 }

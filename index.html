@@ -3,11 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archery Zen Club</title>
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
-    <title>Archery</title>
   </head>
   <body>
-    <div class="fancy woods"></div>
+    <header id="menu1">
+      <h1>It`s like yoga, but Better!</h1>
+      <nav>
+        <a href="#menu1">Home</a>
+        <a href="#menu2">About</a>
+        <a href="#menu3">Services</a>
+        <a href="#menu4">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="menu2" class="background sunset">
+       <div class="text-box">
+        <p>Find your peace</p>
+        <h2>
+          Archery it is a sport and not only. It is more than that. It`s your
+          happy place.
+        </h2>
+        <button onclick="scrollToSection('menu2')">Find out more</button>
+      </div>
+      </section>
+
+      <section id="menu3" class="background woods">
+       <div class="text-box">
+        <p>Some of our services</p>
+        <h2>
+          Individual classes and group classes for 90 minutes, or you can choose
+          one of our monthly subscriptions.
+        </h2>
+        <button onclick="scrollToSection('menu4')">Book now</button>
+      </div>
+      </section>
+
+      <section id="menu4" class="background profi">
+       <div class="text-box">
+        <p>Get in touch</p>
+        <h2>Rebalance your life today.</h2>
+        <button onclick="scrollToSection('menu4')">
+          We are here for you.
+        </button>
+      </div>
+
+    </main>
+
+    <footer>
+      <a href="#top">↑</a>
+      <p> Archery Zen Club &copy; 2025</p>
+    </footer>
   </body>
 </html>
